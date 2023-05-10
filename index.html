@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tic Tac Toe Game</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <!-- <script type="text/javascript"
+    src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=9GpL2c9vfbvcUXb0itvCTjiV61cKkS6M42znnxhntxUom4-cD1ym1w22AU9JzQZMdLyEZfVfDF6O1PMFDct1VrCOZXJxVcIc6ofqDv6pqhHymr-_4xEdmrwJwHOu0w0tRLhNrxx2Xfm0_C-E_ORzavmioJElUzeQXf1XzXQhk_5p87Z8iJk6K8FTlznh6_6vf26AhQ3Vv1W9fOUDouT7YMZ2-6Bqlz-142QhvanB_rnsmi5jTe_CG8-WBKdLWg30SqxaQdTMyg_XXoDHVnuj5E86FYjufWYL3z6BbLgiR6bSEZ_68j4SwC1B_fxNM1DcinpQfgfonOXHtgwxwxeVyB0h5SnRPbJaYJIqL0EzoSlKzA05xNAl687JpntA8kjuC-5TSSXvSRWWBqMtjelqgTkw23chB1BeSqRJSPOfUva3pnS0vZMJx_onguXkapisYRAQ1yNzVo6qUjDqS_G6liCdx6S23i3rpH954aTEIqFTu1HdyJvuY6116ch10lJ7sIcfKz2BPSb7F6TxryqHIrmkhKK6dG4DOSY-4J5N_YOqN_kRF5QFLcvgGyk5Hci2u8U5fDqv4CUAvD4AYG1gyKPzm95XHQ7IZ1D0KouU006gpqcddnyARsGonSytcaSjnTptQgoI4sh6QYaO7hT5-Tc-Zt1Nn0f_p9-nHZmuDJH_5r18WyyzIWSDEjzJ7vnVieXVDi89tbLdaqLRp2H9eP2Nvy4gyBzpYTCSzUszQhUH0iu6m7wy4MUWVYTeS7x7DOX4ZeKpNTZm0qocHM6VqpWuoah00bIxwJ1RZL5_Zdpw16lp73QDZ9TXCwPhvlj4E5Db1Wx8e0rdmQro6uTuo-rPvVUENsGip07iJeOlvmJOEKYVGwBNoNTKp-6mQQn1RLkzbDdPvm-aCM8G7IluGZBI4fpLEPZVxPYPtm8JIlBqt46C-z6lJPfhPeDY5jDIlaBBZCUrCEzgys6daXv0nU-_SQ63fHrNMb_zOKZWdM97RPwmyLAevRdSftDtoPRXdfWwCFoSm20iq2TBG0wj0vipB4A_5ub1YhZdCGgHLW2BvjabgSn-DKak87YwSI6kPG12HcwlVcISFxkIodkhw5Lc5xJaXdT4pQnp6VmpVQ7LJWCWW7JszPeyf-Vr4KLjflWQm2pRIlXxPyqwQv3B8FB7jaJ3Vev4rNOxLHhRdYlS6NyHt0ukeiJqyRSPQow8FMWTrTsAyM9g2ITvzqoE5nNVbV2PQtITLTq81eyvwJw"
+    charset="UTF-8"></script> -->
+  <script src="main.js"></script>
+</head>
+
+<body onload="timer()">
+
+  <h1>Tic Tac Toe</h1>
+  <h2>Its your turn, Player <span class="display_player" id="playerId">X</span></h2>
+  <h2>Score: X:<span id="xscore">0</span> - O: <span id="oscore">0</span>
+    <span style="padding-left: 50px;">AI Mode: </span><span id="aiMode">X</span>
+    <span style="padding-left: 50px;">Time Left: </span><span id="timer">10</span>
+  </h2>
+
+  <div class="game_board">
+    <div class='row'>
+      <div class="one" onclick="insertXO('1')"><span class="xo" id="1"></span></div>
+      <div class="four" onclick="insertXO('4')"><span class="xo" id="4"></span></div>
+      <div class="seven" onclick="insertXO('7')"><span class="xo" id="7"></span></div>
+    </div>
+    <div class='row'>
+      <div class="two" onclick="insertXO('2')"><span class="xo" id="2"></span></div>
+      <div class="five" onclick="insertXO('5')"><span class="xo" id="5"></span></div>
+      <div class="eight" onclick="insertXO('8')"><span class="xo" id="8"></span></div>
+    </div>
+    <div class='row'>
+      <div class="three" onclick="insertXO('3')"><span class="xo" id="3"></span></div>
+      <div class="six" onclick="insertXO('6')"><span class="xo" id="6"></span></div>
+      <div class="nine" onclick="insertXO('9')"><span class="xo" id="9"></span></div>
+    </div>
+  </div>
+
+  <button class="new_game" onclick="newGame()">New Game</button>
+  <button class="reset" onclick="reset()">Reset</button>
+  <button id="aiButton" onclick="aiToggle()">Play Against AI</button>
+</body>
+
+
+</html>
