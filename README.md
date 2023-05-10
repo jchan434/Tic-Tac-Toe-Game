@@ -1,6 +1,7 @@
 # Tic Tac Toe Game
 
 This project is a modified version Tic Tac Toe game that can be played in the browser. Each player can only place 4 pieces, so when you place your fifth piece, the first one will disappear. It has an option to play against an AI opponent or with another human player. The game is tied if it takes more than 2 minutes.
+![ScreenShot](ScreenShot.jpg)
 
 ## Table of Contents
 
