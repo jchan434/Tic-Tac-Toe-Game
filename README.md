@@ -9,7 +9,6 @@ This project is a modified version Tic Tac Toe game that can be played in the br
 - [Features](#features)
 - [How to Run](#how-to-run)
 - [Usage](#usage)
-- [Credits](#credits)
 
 ## Features
 
@@ -34,7 +33,3 @@ This project is a modified version Tic Tac Toe game that can be played in the br
 5. If a player wins, a tie occurs, or time runs out, the game will display an appropriate message.
 6. To start a new game, click the "New Game" button.
 7. To reset the scores, click the "Reset" button.
-
-## Credits
-
-Tic Tac Toe game created by Jenhua Chang
